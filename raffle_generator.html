@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="raffle_generator.css">
+		<style>
+		</style>
+	</head>
+
+	<body>
+		
+		<script src="raffle_generator_functions.js"></script>
+		<script>
+			var names = new Array();
+		</script>
+
+		<img src="https://p6cdn4static.sharpschool.com/UserFiles/Servers/Server_35853/Image/quicklinks/NewLogo.png" width="70" height="55">
+		
+		<h1>Raffle Generator</h1>
+
+
+
+
+		<form onsubmit="return false;"> 
+			<h2>Enter Raffles</h2>
+			<p>
+				<label>Name: </label>
+				<input id= "name" type= "text" id= "name" name= "name" placeholder= "i.e. Ben Dover" />
+			</p>
+			<p>
+				<label>Number of raffles: </label>
+				<input id= "num" type= "number" name= "num" placeholder= "i.e. OVER 9000" />
+			</p>
+			<p>
+				<input id= "submit" type ="button" class="button" value="Add to Raffle" onclick="enterNames(names)">
+			</p>
+		</form>
+
+
+
+
+		<p>
+			<button type="button" class="button" onclick="findWinner(names)">Generate</button>
+		</p>
+
+		<p id="generate"> The winner is... </p>
+
+	</body>
+
+</html>
